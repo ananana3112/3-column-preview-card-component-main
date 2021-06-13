@@ -63,7 +63,8 @@ p {
 }
 
 .btn {
-  border-style: none;
+  border-style: solid;
+  border-color: white;
   width: 130px;
   border-radius: 25px;
   font-family: paraFont;
@@ -81,4 +82,11 @@ p {
 
 #luxury-btn {
   color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: white;
+  cursor: pointer;
+  color: white !important;
 }
