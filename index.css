@@ -3,8 +3,82 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> */
+@font-face {
+  font-family: paraFont;
+  src: url("font/LexendDeca-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: headingFont;
+  src: url("font/BigShouldersDisplay-Bold.ttf") format("truetype");
+}
+
+/* make background color */
 body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+/* make 3 columns */
+#container {
   display: flex;
   flex-direction: row;
-  color: firebrick;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 10%;
+}
+.column {
+  width: 270px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* color each column */
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: headingFont;
+  font-weight: 700;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: paraFont;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+.btn {
+  border-style: none;
+  width: 130px;
+  border-radius: 25px;
+  font-family: paraFont;
+  font-weight: 700;
+  padding: 15px;
+}
+
+#sedan-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvs-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+#luxury-btn {
+  color: hsl(179, 100%, 13%);
 }
